@@ -32,14 +32,19 @@ def check_ip_against_threat_intel(ips):
 
     for ip in ips:
         response = requests.get(api_url, headers=headers, params={"ipAddress": ip})
-        data = response.json()
-        results[ip] = data
-
-        return results
+        if response.status_code == 200:
+            data = response.json()
+            results[ip] = data
+        else:
+            results[ip] = {
+                "error": "Failed to retrieve data"
+            }
+    return results
 
 def read_ips_from_file(file_path):
     with open(file_path, 'r') as file:
         ips = file.read().splitlines()
+        ips = [ip.strip().strip(',') for ip in ips]
     return ips
 
 def main():
