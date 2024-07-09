@@ -2,6 +2,13 @@
 
 ThreatHunter is a Python tool designed to gather network connection information and check it against a threat intelligence platform to identify potential threats.
 
+## Preview
+
+- `images/image1.png`
+- `images/image2.png`
+- `images/image3.png`
+
+
 ## Installation
 
 1. **First you need to clone the repository**
