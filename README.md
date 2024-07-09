@@ -4,10 +4,9 @@ ThreatHunter is a Python tool designed to gather network connection information 
 
 ## Preview
 
-- `images/image1.png`
-- `images/image2.png`
-- `images/image3.png`
-
+- Windows Preview ![Windows Preview](https://github.com/evtimov-ptr/Threat-hunter/blob/master/images/image1.png)
+- Linux Preview ![Windows Preview](https://github.com/evtimov-ptr/Threat-hunter/blob/master/images/image2.png)
+- macOS Preview ![Windows Preview](https://github.com/evtimov-ptr/Threat-hunter/blob/master/images/image3.png)
 
 ## Installation
 
